@@ -1,29 +1,44 @@
 export default [
   {
-    title: 'Hardly Anything Takes More Coura...',
-    image: 'https://source.unsplash.com/dS2hi__ZZMk/840x840',
-    price: 180,
+    title: 'Folder 4',
+    image: 'http://aux.iconspalace.com/uploads/folder-icon-256-1787672482.png',
+    price: '5th April',
     horizontal: true,
   },
   {
-    title: 'Find the cheapest deals on our range...',
-    image: 'https://source.unsplash.com/tb6ulgGY5Zc/840x840',
-    price: 220,
+    title: 'Folder 1',
+    image: 'http://aux.iconspalace.com/uploads/folder-icon-256-1787672482.png',
+    price: '4th April',
   },
   {
-    title: 'Adidas Tango Terry Jersey',
-    image: 'https://source.unsplash.com/YHbcum51JB0/840x840',
-    price: 40,
+    title: 'Folder 2',
+    image: 'http://aux.iconspalace.com/uploads/folder-icon-256-1787672482.png',
+    price: '7th April',
   },
   {
-    title: 'Internet of Things (IoT) is Here to Stay',
-    image: 'https://source.unsplash.com/I7BSOoPa5hM/840x840',
-    price: 188,
+    title: 'Folder 3',
+    image: 'http://aux.iconspalace.com/uploads/folder-icon-256-1787672482.png',
+    price: '6th April',
     horizontal: true,
   },
   {
-    title: 'Coffee - A Drop of Happiness in a Cup',
+    title: 'Folder 5',
+    image: 'http://aux.iconspalace.com/uploads/folder-icon-256-1787672482.png',
+    price: '8th April',
+  },
+  {
+    title: 'Folder 6',
     image: 'https://source.unsplash.com/Ws4wd-vJ9M0/840x840',
     price: 180,
+  },
+  {
+    title: 'Folder 7',
+    image: 'https://source.unsplash.com/Ws4wd-vJ9M0/840x840',
+    price: '4th April',
+  },
+  {
+    title: 'Folder 8',
+    image: 'https://source.unsplash.com/Ws4wd-vJ9M0/840x840',
+    price: '4th April',
   },
 ];

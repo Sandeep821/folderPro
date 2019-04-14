@@ -126,16 +126,16 @@ class Header extends React.Component {
 
     return (
       <Block row style={styles.tabs}>
-        <Button shadowless style={[styles.tab, styles.divider]} onPress={() => navigation.navigate('Pro')}>
+        <Button shadowless style={[styles.tab, styles.divider]} onPress={() => navigation.navigate('Home')}>
           <Block row middle>
             <Icon name="grid-square" family="Galio" style={{ paddingRight: 8 }} />
-            <Text size={16} style={styles.tabTitle}>{tabTitleLeft || 'Categories'}</Text>
+            <Text size={16} style={styles.tabTitle}>{tabTitleLeft || 'FOLDERS'}</Text>
           </Block>
         </Button>
         <Button shadowless style={styles.tab} onPress={() => navigation.navigate('Pro')}>
           <Block row middle>
-            <Icon size={16} name="camera-18" family="GalioExtra" style={{ paddingRight: 8 }} />
-            <Text size={16} style={styles.tabTitle}>{tabTitleRight || 'Best Deals'}</Text>
+            <Icon size={16} name="" family="" style={{ paddingRight: 8 }} />
+            <Text size={16} style={styles.tabTitle}>{tabTitleRight || 'TIMELINE'}</Text>
           </Block>
         </Button>
       </Block>

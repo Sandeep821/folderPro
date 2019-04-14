@@ -17,20 +17,20 @@ export default class Onboarding extends React.Component {
         <Block flex center>
           <ImageBackground
             source={{  uri: Images.Onboarding }}
-            style={{ height: height, width: width, marginTop: '-55%', zIndex: 1 }}
+            style={{ height: '80%', width: '90%', marginTop: '30%', marginLeft: '-80%', zIndex: 1 }}
           />
         </Block>
         <Block flex space="between" style={styles.padded}>
           <Block flex space="around" style={{ zIndex: 2 }}>
             <Block>
               <Block>
-                <Text color="white" size={60}>Material</Text>
+                <Text color="white" size={60}>FOLDER</Text>
               </Block>
               <Block row>
-                <Text color="white" size={60}>Kit</Text>
+                <Text color="white" size={60}>Pro</Text>
               </Block>
               <Text size={16} color='rgba(255,255,255,0.6)'>
-                Fully coded React Native components.
+                A Document Organizer App.
               </Text>
             </Block>
             <Block center>
@@ -51,7 +51,7 @@ export default class Onboarding extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme.COLORS.BLACK,
+    backgroundColor: '#43024D',
   },
   padded: {
     paddingHorizontal: theme.SIZES.BASE * 2,

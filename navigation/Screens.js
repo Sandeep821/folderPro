@@ -132,38 +132,7 @@ const AppStack = createDrawerNavigator(
         ),
       }),
     },
-    Woman: {
-      screen: ProScreen,
-      navigationOptions: (navOpt) => ({
-        drawerLabel: ({focused}) => (
-          <Drawer focused={focused} screen="Pro" title="Woman" />
-        ),
-      }),
-    },
-    Man: {
-      screen: ProScreen,
-      navigationOptions: (navOpt) => ({
-        drawerLabel: ({focused}) => (
-          <Drawer focused={focused} screen="Pro" title="Man" />
-        ),
-      }),
-    },
-    Kids: {
-      screen: ProScreen,
-      navigationOptions: (navOpt) => ({
-        drawerLabel: ({focused}) => (
-          <Drawer focused={focused} screen="Pro" title="Kids" />
-        ),
-      }),
-    },
-    NewCollection: {
-      screen: ProScreen,
-      navigationOptions: (navOpt) => ({
-        drawerLabel: ({focused}) => (
-          <Drawer focused={focused} screen="Pro" title="New Collection" />
-        ),
-      }),
-    },
+    
     Profile: {
       screen: ProfileStack,
       navigationOptions: (navOpt) => ({
@@ -185,6 +154,14 @@ const AppStack = createDrawerNavigator(
       navigationOptions: (navOpt) => ({
         drawerLabel: ({focused}) => (
           <Drawer focused={focused} screen="Components" title="Components" />
+        ),
+      }),
+    },
+    Tagging: {
+      screen: ProfileStack,
+      navigationOptions: (navOpt) => ({
+        drawerLabel: ({focused}) => (
+          <Drawer focused={focused} screen="Profile" title="Tagging" />
         ),
       }),
     },

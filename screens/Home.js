@@ -3,6 +3,7 @@ import { StyleSheet, Dimensions, ScrollView } from 'react-native';
 import { Button, Block, Text, Input, theme } from 'galio-framework';
 
 import { Icon, Product } from '../components/';
+import materialTheme from '../constants/Theme';
 
 const { width } = Dimensions.get('screen');
 import products from '../constants/products';
@@ -32,13 +33,13 @@ export default class Home extends React.Component {
         <Button shadowless style={[styles.tab, styles.divider]} onPress={() => navigation.navigate('Pro')}>
           <Block row middle>
             <Icon name="grid-square" family="Galio" style={{ paddingRight: 8 }} />
-            <Text size={16} style={styles.tabTitle}>Categories</Text>
+            <Text size={16} style={styles.tabTitle}>Folders</Text>
           </Block>
         </Button>
         <Button shadowless style={styles.tab} onPress={() => navigation.navigate('Pro')}>
           <Block row middle>
             <Icon size={16} name="camera-18" family="GalioExtra" style={{ paddingRight: 8 }} />
-            <Text size={16} style={styles.tabTitle}>Best Deals</Text>
+            <Text size={16} style={styles.tabTitle}>Timeline</Text>
           </Block>
         </Button>
       </Block>
@@ -51,13 +52,21 @@ export default class Home extends React.Component {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.products}>
         <Block flex>
-          <Product product={products[0]} horizontal />
           <Block flex row>
             <Product product={products[1]} style={{ marginRight: theme.SIZES.BASE }} />
-            <Product product={products[2]} />
+            <Product product={products[2]} style={{ marginRight: theme.SIZES.BASE }}/>
+            <Product product={products[3]} style={{ marginRight: theme.SIZES.BASE }} />
+            <Product product={products[4]} style={{ marginRight: theme.SIZES.BASE }}/>
           </Block>
-          <Product product={products[3]} horizontal />
-          <Product product={products[4]} full />
+          <Block center>
+              <Button
+                shadowless
+                style={styles.button}
+                color={materialTheme.COLORS.BUTTON_COLOR}
+                onPress={() => navigation.navigate('Home')}>
+                Add Document
+              </Button>
+            </Block>
         </Block>
       </ScrollView>
     )
@@ -119,5 +128,11 @@ const styles = StyleSheet.create({
   products: {
     width: width - theme.SIZES.BASE * 2,
     paddingVertical: theme.SIZES.BASE * 2,
+  },
+  button: {
+    width: width - theme.SIZES.BASE * 4,
+    height: theme.SIZES.BASE * 3,
+    shadowRadius: 0,
+    shadowOpacity: 0,
   },
 });
